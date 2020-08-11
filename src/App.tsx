@@ -1,4 +1,12 @@
 import React from 'react';
+import GlobalStyle from './styles/global';
+import Signin from './pages/Signin';
 
-const App = (): JSX.Element => <div className="App">oi</div>;
+const App: React.FC = () => (
+  <>
+    <Signin />
+    <GlobalStyle />
+  </>
+);
+
 export default App;
