@@ -23,7 +23,7 @@ interface AuthState {
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
-export const AuthProvider: React.FC = ({ children }) => {
+const AuthProvider: React.FC = ({ children }) => {
   const [data, setData] = useState<AuthState>(() => {
     const token = localStorage.getItem('@Appbarber:token');
     const user = localStorage.getItem('@Appbarber:user');
@@ -62,7 +62,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   );
 };
 
-export const useAuth = (): AuthContextData => {
+const useAuth = (): AuthContextData => {
   const context = useContext(AuthContext);
 
   if (!context) {
@@ -71,3 +71,5 @@ export const useAuth = (): AuthContextData => {
 
   return context;
 };
+
+export { AuthProvider, useAuth };
