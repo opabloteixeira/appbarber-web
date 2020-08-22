@@ -18,7 +18,7 @@ export const Content = styled.div`
   max-width: 700px;
 
   form {
-    margin: 80px 0;
+    margin: 80px 0 40px 0;
     width: 340px;
     text-align: center;
 
@@ -71,10 +71,10 @@ export const Content = styled.div`
   }
 `;
 
-const appearFromLeft = keyframes`
+const appearFromRight = keyframes`
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
@@ -87,9 +87,9 @@ export const AnimationContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: ${appearFromLeft} 1s;
+  animation: ${appearFromRight} 1s;
   form {
-    margin: 80px 0;
+    margin: 80px 0 40px 0;
     width: 340px;
     text-align: center;
     h1 {
@@ -107,7 +107,7 @@ export const AnimationContainer = styled.div`
     }
   }
   > a {
-    color: #f4ede8;
+    color: #ff9000;
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -118,7 +118,7 @@ export const AnimationContainer = styled.div`
       margin-right: 16px;
     }
     &:hover {
-      color: ${shade(0.2, '#f4ede8')};
+      color: ${shade(0.2, '#ff9000')};
     }
   }
 `;
