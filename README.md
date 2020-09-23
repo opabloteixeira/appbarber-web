@@ -1,6 +1,6 @@
 # App Barber
 
-## React com typescript - configurados eslint e prettier.
+## React com typescript - configurados eslint e prettier
 
 ### Aplicação em desenvolvimento
 
